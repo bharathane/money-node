@@ -1,0 +1,65 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+    "username":"bharath",
+    "name":"bharath boyina",
+    "gender":"male",
+    "password":"bharath@123",
+    "balance":100000
+ }
+ 
+######
+
+
+ POST http://localhost:3000/login
+ Content-Type: application/json
+
+  {
+    "username":"bharath",
+    "password":"bharath@123"
+  }
+
+
+
+####
+
+
+
+POST http://localhost:3000/postData
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJoYXJhdGgiLCJpYXQiOjE3MDc5MTAwNjh9.pRVegMjf0SaY4BMSCHz7szqUZPvkQprrog6WA5Q0VBI
+
+  {
+      "category":"salary",
+      "type":"income",
+      "amount":50000,
+      "transactionDate":"2024-2-1"
+    }
+
+
+###
+
+
+
+GET http://localhost:3000/getData
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJoYXJhdGgiLCJpYXQiOjE3MDc4OTQ3NTB9.LDOiVTRM_lywQtr6iKZnbHw7H9mRZwTUIcxpcwvyePk
+
+###
+
+
+DELETE http://localhost:3000/delete/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJoYXJhdGgiLCJpYXQiOjE3MDc4OTQ3NTB9.LDOiVTRM_lywQtr6iKZnbHw7H9mRZwTUIcxpcwvyePk
+
+###
+
+PUT http://localhost:3000/update/9
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJoYXJhdGgiLCJpYXQiOjE3MDc4OTQ3NTB9.LDOiVTRM_lywQtr6iKZnbHw7H9mRZwTUIcxpcwvyePk
+
+  {
+      "category":"shopping",
+      "type":"expenses",
+      "amount":1000,
+      "transactionDate":"2024-2-18"
+    }
